@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Order System</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <!-- MDB -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.1.0/mdb.min.css">
+</head>
+<body>
+    <!-- Navbar start -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <!-- Container wrapper start -->
+        <div class="container">
+            <!-- Navbar brand -->
+            <a href="#" class="navbar-brand me-2">
+                Pizza Order System <i class="fas fa-pizza-slice ms-3"></i>
+            </a>
+
+            <!-- Toggle button -->
+            <button type="button" class="navbar-toggler" data-mdb-toggle="collapse" data-mdb-target="#navbarButtons" aria-controls="navbarButtons" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <!-- Collapsible wrapper start -->
+            <div class="collapse navbar-collapse" id="navbarButtons">
+                <!-- Left links start -->
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                <!-- Left links end -->
+
+                <div class="d-flex align-items-center">
+                    <button type="button" class="btn text-dark btn-link px-3 me-2 display-5">
+                        Login
+                    </button>
+                    <button type="button" class="btn btn-dark me-3">
+                        Sign up for free
+                    </button>
+                </div>
+            </div> <!-- Collapsible wrapper end -->
+        </div> <!-- Container wrapper end -->
+    </nav> <!-- Navbar end -->
+
+    <div class="container mt-3">
+        <div class="row">
+            <!-- Catagories start -->
+            <div class="col-3">
+                <div class="card text-center">
+                    <div class="card-header">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Enter pizza name...">
+                            <span class="input-group-text"><i class="fas fa-search"></i></span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="border-bottom border-dark py-1 mb-1">
+                            All
+                        </div>
+                        <div class="border-bottom border-dark py-1 mb-1">
+                            Seafood
+                        </div>
+                        <div class="border-bottom border-dark py-1 mb-1">
+                            Chicken
+                        </div>
+                        <div class="border-bottom border-dark py-1 mb-1">
+                            Cheese
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Catagories end -->
+            <div class="col-9">
+                <!-- cover start -->
+                <div id="carouselExampleInterval" class="carousel slide" data-mdb-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" style="height: 350px;" data-mdb-interval="10000">
+                            <img src="https://c4.wallpaperflare.com/wallpaper/1017/647/742/food-pizza-cheese-tomatoes-olives-hd-wallpaper-preview.jpg" alt="..." class="d-block w-100 h-100">
+                        </div>
+                        <div class="carousel-item" style="height: 350px;" data-mdb-interval="2000">
+                            <img src="https://c4.wallpaperflare.com/wallpaper/205/168/868/dinner-food-pie-pizza-wallpaper-preview.jpg" alt="..." class="d-block w-100 h-100">
+                        </div>
+                        <div class="carousel-item" style="height: 350px;">
+                            <img src="https://c4.wallpaperflare.com/wallpaper/1017/647/742/food-pizza-cheese-tomatoes-olives-hd-wallpaper-preview.jpg" alt="..." class="d-block w-100 h-100">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" data-mdb-target="#carouselExampleInterval" type="button" data-mdb-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" data-mdb-target="#carouselExampleInterval" type="button" data-mdb-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+                <!-- cover end -->
+                <!-- pizza list start -->
+                <div class="d-flex justify-content-around mt-3 mb-3">
+                    <div class="card shadow" style="width: 13rem;">
+                        <img src="https://c8.alamy.com/comp/2CFC46C/beautiful-photography-of-tasty-pizza-wooden-table-restaurant-hotels-for-advertising-posters-paper-digital-offset-print-for-page-background-etc-2CFC46C.jpg" alt="..." class="card-img-top rounded-1" style="height: 140px;">
+                        <div class="card-body text-center p-2">
+                            <p class="card-text">
+                                <p class="fs-5">Cheese pizza</p>
+                                <small class="text-muted">10$</small>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card shadow" style="width: 13rem;">
+                        <img src="https://c8.alamy.com/comp/2CFC46C/beautiful-photography-of-tasty-pizza-wooden-table-restaurant-hotels-for-advertising-posters-paper-digital-offset-print-for-page-background-etc-2CFC46C.jpg" alt="..." class="card-img-top rounded-1" style="height: 140px;">
+                        <div class="card-body text-center p-2">
+                            <p class="card-text">
+                                <p class="fs-5">Cheese pizza</p>
+                                <small class="text-muted">10$</small>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card shadow" style="width: 13rem;">
+                        <img src="https://media-cdn.tripadvisor.com/media/photo-s/04/84/52/d4/getlstd-property-photo.jpg" alt="..." class="card-img-top rounded-1" style="height: 140px;">
+                        <div class="card-body text-center p-2">
+                            <p class="card-text">
+                                <p class="fs-5">Cheese pizza</p>
+                                <small class="text-muted">10$</small>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card shadow" style="width: 13rem;">
+                        <img src="https://media-cdn.tripadvisor.com/media/photo-s/04/84/52/d4/getlstd-property-photo.jpg" alt="..." class="card-img-top rounded-1" style="height: 140px;">
+                        <div class="card-body text-center p-2">
+                            <p class="card-text">
+                                <p class="fs-5">Cheese pizza</p>
+                                <small class="text-muted">10$</small>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-around mt-3 mb-3">
+                    <div class="card shadow" style="width: 13rem;">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfqeT0sc7um0EkPRUsUNRv-lKMdERaAQ98j3QXU78mJMdPgPKpeyIw3FPqJ2AltsNEYys&usqp=CAU" alt="..." class="card-img-top rounded-1" style="height: 140px;">
+                        <div class="card-body text-center p-2">
+                            <p class="card-text">
+                                <p class="fs-5">Cheese pizza</p>
+                                <small class="text-muted">10$</small>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card shadow" style="width: 13rem;">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfqeT0sc7um0EkPRUsUNRv-lKMdERaAQ98j3QXU78mJMdPgPKpeyIw3FPqJ2AltsNEYys&usqp=CAU" alt="..." class="card-img-top rounded-1" style="height: 140px;">
+                        <div class="card-body text-center p-2">
+                            <p class="card-text">
+                                <p class="fs-5">Cheese pizza</p>
+                                <small class="text-muted">10$</small>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card shadow" style="width: 13rem;">
+                        <img src="https://st.depositphotos.com/1003814/5052/i/450/depositphotos_50523105-stock-photo-pizza-with-tomatoes.jpg" alt="..." class="card-img-top rounded-1" style="height: 140px;">
+                        <div class="card-body text-center p-2">
+                            <p class="card-text">
+                                <p class="fs-5">Cheese pizza</p>
+                                <small class="text-muted">10$</small>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card shadow" style="width: 13rem;">
+                        <img src="https://st.depositphotos.com/1003814/5052/i/450/depositphotos_50523105-stock-photo-pizza-with-tomatoes.jpg" alt="..." class="card-img-top rounded-1" style="height: 140px;">
+                        <div class="card-body text-center p-2">
+                            <p class="card-text">
+                                <p class="fs-5">Cheese pizza</p>
+                                <small class="text-muted">10$</small>
+                            </p>
+                        </div>
+                    </div>
+                </div> <!-- pizza list end -->
+            </div> <!-- col-9 end -->
+        </div> <!-- row end -->
+        <!-- Contact start -->
+        <div class="mt-5">
+            <div class="row">
+                <div class="col-6 mx-auto">
+                    <div class="text-center">
+                        <p class="fs-2">Contact Us</p>
+                    </div>
+                    <div class="mb-3">
+                        <label class="fs-5 ms-2">Name</label>
+                        <input type="text" class="form-control" placeholder="Enter your name..."></input>
+                    </div>
+                    <div class="mb-3">
+                        <label class="fs-5 ms-2">Email</label>
+                        <input type="email" class="form-control" placeholder="eg : example@gmail.com"></input>
+                    </div>
+                    <div class="mb-3">
+                        <label class="fs-5 ms-2">Message</label>
+                        <textarea class="form-control" cols="30" rows="8" placeholder="Enter message"></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Contact end -->
+    </div> <!-- container-fluid end -->
+
+    <div class="bg-dark mt-5">
+        <div class="text-white fs-5 text-center">
+            Created by Code Lab
+        </div>
+    </div>
+
+    <!-- MDB -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.1.0/mdb.min.js" type="text/javascript"></script>
+</body>
+</html>
